@@ -127,12 +127,15 @@ li {
 /*End header styles */
 
 /*Bunners styles*/
+
 .banners {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    padding-bottom: 40px;
+    margin-bottom: 40px;
+    border-bottom: 1px solid #ccc;
 }
-
 
 .banners__title {
     width: 100%;
@@ -142,17 +145,16 @@ li {
     color: black;
     font-family: "Tahoma";
 }
+
 .banners__left {
     border: 3px solid #b0b0b0;
 }
-
 
 .banners__control {
     display: flex;
     justify-content: space-around;
     align-items: center;
 }
-
 
 .banners__btnL, .banners__btnR {
     color: #f2ac04;
@@ -161,8 +163,7 @@ li {
     padding: 15px 0;
 }
 
-.banners__left, 
-.banners__right {
+.banners__left, .banners__right {
     width: 48%;
 }
 
@@ -183,15 +184,14 @@ li {
 }
 
 .banners__overlay {
-position: absolute;
-left: 0;
-top: 50px;
-color: white;
-padding: 15px;
+    position: absolute;
+    left: 0;
+    top: 50px;
+    color: white;
+    padding: 15px;
 }
 
-.banners__overlayText,
-.banners__overlayWeightText {
+.banners__overlayText, .banners__overlayWeightText {
     font-family: "Novecentowide";
     text-transform: uppercase;
 }
@@ -214,6 +214,7 @@ padding: 15px;
     background: black;
     text-align: center;
     display: flex;
+    line-height: 20px;
 }
 
 .moreLink__arrow {
@@ -224,9 +225,123 @@ padding: 15px;
 }
 
 .moreLink__text {
-    padding: 2px 5px;  
+    padding: 2px 5px;
     display: block;
 }
+
+/* End banners
+
+/* Block info */
+
+.info {
+    display: flex;
+}
+
+.info__contacts, .info__about, .info__news {
+    width: 33.33%;
+}
+
+.info__about {
+    border-right: 1px solid #ccc;
+    border-left: 1px solid #ccc;
+
+    padding: 0 35px;
+    font-size: 16px;
+    line-height: 23px;
+    color: #3c3c3c;
+    font-family: "Helvetica CE";
+}
+
+.info__contacts {
+    padding-left: 35px;
+}
+
+.info__news {
+    padding-right: 10px;
+}
+
+.info__title {
+    margin: 0 0 35px;
+    color:#565656;
+    font-family: "Helvetica";
+    font-size: 20px;
+    text-transform: uppercase;
+
+}
+
+.info__chapter {
+    font-size: 16px;
+    color: #565656;
+    margin: 0 0 10px 0;
+}
+
+.info__description {
+    margin: 0;
+    font-size: 14px;
+    color: #939393;
+    font-family: "Tahoma";
+}
+
+.info__article {
+    display: flex;
+    align-items: flex-start;
+    border-bottom: 1px dashed #636363;
+    padding-bottom: 15px;
+    margin-bottom: 15px;
+}
+
+.info__date {
+    border-right: 1px solid #ccc;
+    padding: 0 10px 0 3px;
+    margin-right: 10px;
+}
+
+.info__num {
+    color: #f2ac04;
+    font-family: "Helvetica";
+    font-weight: bold;
+    font-size: 18px;
+    font-style: normal;
+}
+
+.info__mon {
+    font-style: normal;
+    font-size: 12px;
+}
+
+.info__icon {
+    color: #c0c0c0;
+    font-size: 28px;
+    width: 35px;
+    text-align: center;
+    margin-right: 20px;
+}
+
+.info__item {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px dashed #636363;
+    padding-bottom: 15px;
+    margin-bottom: 15px;
+}
+
+.info__item:last-child {
+    border: none;
+    align-items: flex-start;
+}
+
+.info__phone {
+    font-weight: bold;
+    color: #757575;
+    font-size: 18px;
+}
+
+.info__address {
+    color: #757575;
+    line-height: 28px;
+}
+
+/* End Block info */
 
 @media (max-width: 1000px) {
     .container {
@@ -238,15 +353,12 @@ padding: 15px;
 }
 
 @media (max-width: 975px) {
-
-.banners__overlay {
-    top: 15px;
-}
-
+    .banners__overlay {
+        top: 15px;
+    }
     .banners__overlayText {
         font-size: 24px;
     }
-
     .banners__overlayWeightText {
         font-size: 30px;
     }
@@ -273,34 +385,25 @@ padding: 15px;
     .header__menu {
         justify-content: center;
     }
-
     .banners {
         justify-content: center;
         text-align: center;
     }
-
-    .banners__left,
-    .banners__right {
+    .banners__left, .banners__right {
         width: 75%;
     }
-
     .banners__left {
         margin-bottom: 15px;
     }
 }
 
-
-
 @media (max-width: 500px) {
-    .banners__left,
-    .banners__right {
+    .banners__left, .banners__right {
         width: 95%;
     }
-
     .banners__overlayText {
         font-size: 18px;
     }
-
     .banners__overlayWeightText {
         font-size: 24px;
     }
