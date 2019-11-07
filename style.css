@@ -62,15 +62,22 @@ li {
     font-size: 34px;
 }
 
-.logo_size_large::after, .logo_size_large::before {
+.logo_size_large::after,
+.logo_size_large::before {
     height: 55px;
     width: 55px;
 }
 
-.logo_size_little {
-    width: 210px;
-    height: 65px;
-    font-size: 34px;
+.logo_size_small {
+    width: 150px;
+    height: 35px;
+    font-size: 26px;
+}
+
+.logo_size_small::after,
+.logo_size_small::before {
+    height: 35px;
+    width: 35px;
 }
 
 /* End Shared styles */
@@ -357,7 +364,7 @@ li {
     border-top: 1px solid #ccc;
     border-bottom: 1px solid #ccc;
     padding: 15px 0;
-    margin: 60px 0 25px 0;
+    margin: 60px 0 0 0;
     position: relative;
 }
 
@@ -377,6 +384,46 @@ li {
 }
 
 /* End Clients styles */
+
+/* Footer styles */
+
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 15px;
+}
+
+.footer .logo {
+    margin: 20px 0;
+}
+
+.footer__menu {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 10px;
+}
+
+.footer__link {
+padding: 0 15px;
+text-transform: uppercase;
+border-right: 1px solid#ccc;
+color: #535353;
+}
+
+.footer__menu li:last-child .footer__link {
+    border: none;
+}
+
+.footer__copy {
+    color: #535353;
+}
+
+
+
+/*End Footer styles */
 
 
 @media (max-width: 1000px) {
@@ -415,7 +462,7 @@ width: 50%;
 }
 
 .clients {
-    margin: 15px 0;
+    margin-top: 15px 0;
 }
 }
 
